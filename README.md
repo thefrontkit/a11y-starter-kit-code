@@ -1,6 +1,6 @@
 # A11y Starter Kit
 
-A free, production-ready accessibility starter kit by [TheFrontKit](https://thefrontkit.com). Build WCAG 2.1 AA compliant interfaces from day one with Next.js 16, Tailwind CSS 4, and shadcn/ui.
+A free, production-ready accessibility starter kit by [thefrontkit](https://thefrontkit.com). Build WCAG 2.1 AA compliant interfaces from day one with Next.js 16, Tailwind CSS 4, and shadcn/ui.
 
 ## Why This Kit?
 
@@ -92,4 +92,4 @@ hooks/            # Custom accessibility hooks
 
 ## License
 
-Free to use for personal and commercial projects. Built and maintained by [TheFrontKit](https://thefrontkit.com).
+Free to use for personal and commercial projects. Built and maintained by [thefrontkit](https://thefrontkit.com).
