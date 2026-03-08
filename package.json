@@ -1,7 +1,29 @@
 {
   "name": "@thefrontkit/a11y-starter-kit",
   "version": "0.1.0",
-  "private": true,
+  "description": "A free, accessible Next.js starter kit with WCAG-compliant UI components, dark mode, and best practices for building inclusive web applications.",
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "nextjs",
+    "starter-kit",
+    "react",
+    "wcag",
+    "tailwindcss",
+    "shadcn",
+    "dark-mode",
+    "accessible-components"
+  ],
+  "author": "thefrontkit <thefrontkit@gmail.com> (https://thefrontkit.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thefrontkit/a11y-starter-kit.git"
+  },
+  "homepage": "https://thefrontkit.com",
+  "bugs": {
+    "url": "https://github.com/thefrontkit/a11y-starter-kit/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
