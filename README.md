@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# A11y Starter Kit
+
+A free, production-ready accessibility starter kit by [TheFrontKit](https://thefrontkit.com). Build WCAG 2.1 AA compliant interfaces from day one with Next.js 16, Tailwind CSS 4, and shadcn/ui.
+
+## Why This Kit?
+
+Most starter kits treat accessibility as an afterthought. This one bakes it in from the start. Every component, page, and interaction has been built with keyboard users, screen readers, and assistive technologies in mind.
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **React 19**
+- **Tailwind CSS 4**
+- **shadcn/ui** components
+- **TypeScript**
+- **React Hook Form** + **Zod** validation
+- **TanStack Table** for data tables
+
+## Demo Pages
+
+| Page | What It Demonstrates |
+|------|---------------------|
+| **Login** | Accessible forms, error announcements, focus management, password visibility toggles |
+| **Dashboard** | Skip links, ARIA landmarks, keyboard sidebar navigation, breadcrumbs |
+| **Data Table** | Sortable headers with `aria-sort`, screen reader announcements, pagination |
+| **Settings** | Fieldset/legend grouping, toggle switches, radio groups, save confirmations |
+| **Notifications** | Focus trapping, escape key handling, toast notifications, reduced motion support |
+
+## Accessibility Features
+
+- **Keyboard Navigation** - Full keyboard support with skip links, focus trapping, and arrow key navigation
+- **Screen Reader Support** - ARIA landmarks, live regions, and semantic HTML throughout
+- **Reduced Motion** - Respects `prefers-reduced-motion` for users with motion sensitivities
+- **Touch Accessible** - Minimum 44px touch targets and proper spacing
+- **Dark Mode** - System-aware theme switching with proper contrast ratios
+- **Focus Management** - Visible focus indicators and logical focus order on every page
+
+## Custom Hooks
+
+| Hook | Purpose |
+|------|---------|
+| `useAnnounce` | Screen reader announcements via ARIA live regions |
+| `useFocusTrap` | Trap focus within modals and dialogs |
+| `useKeyboardNavigation` | Arrow key navigation for menus and lists |
+| `useReducedMotion` | Detect and respect reduced motion preferences |
+
+## Components
+
+**A11y Utilities**
+- `LiveRegion` - Dynamic screen reader announcements
+- `VisuallyHidden` - Content visible only to assistive technology
+
+**Layout**
+- `SkipLink` - Jump to main content for keyboard users
+- `Header`, `Footer`, `Sidebar`, `Breadcrumbs`
+- `MobileNav` - Accessible mobile navigation
+- `ThemeToggle` - Dark/light mode switcher
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to explore the demos.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  login/          # Accessible login & signup forms
+  dashboard/      # Dashboard with landmarks & navigation
+  data-table/     # Sortable, screen-reader-friendly table
+  settings/       # Form controls & grouped settings
+  notifications/  # Modals, toasts & focus trapping
 
-## Learn More
+components/
+  a11y/           # Accessibility utility components
+  forms/          # Form components with validation
+  layout/         # Page layout components
+  ui/             # shadcn/ui base components
+  dashboard/      # Dashboard-specific components
+  data-table/     # Table-specific components
+  notifications/  # Notification & dialog components
 
-To learn more about Next.js, take a look at the following resources:
+hooks/            # Custom accessibility hooks
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Free to use for personal and commercial projects. Built and maintained by [TheFrontKit](https://thefrontkit.com).
