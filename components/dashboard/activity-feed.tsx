@@ -15,7 +15,7 @@ export function ActivityFeed({ items }: ActivityFeedProps) {
       <CardContent>
         <ul className="space-y-4" aria-label="Recent activity">
           {items.map((item) => (
-            <li key={item.id} className="flex items-start gap-3">
+            <li key={item.id} className="flex items-start gap-3 rounded-md p-2 -mx-2 transition-colors duration-150 hover:bg-muted/50">
               <Avatar className="h-8 w-8">
                 <AvatarFallback className="text-xs">
                   {item.user

@@ -31,7 +31,7 @@ export function NotificationsForm() {
         <fieldset className="space-y-4">
           <legend className="text-lg font-semibold">Email Notifications</legend>
 
-          <div className="flex items-center justify-between rounded-lg border p-4">
+          <div className="flex items-center justify-between rounded-lg border p-4 transition-colors duration-150 hover:bg-muted/30">
             <div className="space-y-0.5">
               <Label htmlFor="marketing-emails" className="text-sm font-medium">
                 Marketing emails
@@ -48,7 +48,7 @@ export function NotificationsForm() {
             />
           </div>
 
-          <div className="flex items-center justify-between rounded-lg border p-4">
+          <div className="flex items-center justify-between rounded-lg border p-4 transition-colors duration-150 hover:bg-muted/30">
             <div className="space-y-0.5">
               <Label htmlFor="security-emails" className="text-sm font-medium">
                 Security emails
@@ -74,7 +74,7 @@ export function NotificationsForm() {
             onValueChange={setPushPreference}
             aria-label="Push notification preference"
           >
-            <div className="flex items-center space-x-3 rounded-lg border p-4">
+            <div className="flex items-center space-x-3 rounded-lg border p-4 transition-colors duration-150 hover:bg-muted/30">
               <RadioGroupItem value="everything" id="push-everything" />
               <div>
                 <Label htmlFor="push-everything" className="text-sm font-medium cursor-pointer">
@@ -86,7 +86,7 @@ export function NotificationsForm() {
               </div>
             </div>
 
-            <div className="flex items-center space-x-3 rounded-lg border p-4">
+            <div className="flex items-center space-x-3 rounded-lg border p-4 transition-colors duration-150 hover:bg-muted/30">
               <RadioGroupItem value="mentions" id="push-mentions" />
               <div>
                 <Label htmlFor="push-mentions" className="text-sm font-medium cursor-pointer">
@@ -98,7 +98,7 @@ export function NotificationsForm() {
               </div>
             </div>
 
-            <div className="flex items-center space-x-3 rounded-lg border p-4">
+            <div className="flex items-center space-x-3 rounded-lg border p-4 transition-colors duration-150 hover:bg-muted/30">
               <RadioGroupItem value="nothing" id="push-nothing" />
               <div>
                 <Label htmlFor="push-nothing" className="text-sm font-medium cursor-pointer">

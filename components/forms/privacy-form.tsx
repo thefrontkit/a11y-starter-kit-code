@@ -37,7 +37,7 @@ export function PrivacyForm() {
         <fieldset className="space-y-4">
           <legend className="text-lg font-semibold">Privacy Settings</legend>
 
-          <div className="space-y-2 rounded-lg border p-4">
+          <div className="space-y-2 rounded-lg border p-4 transition-colors duration-150 hover:bg-muted/30">
             <Label htmlFor="profile-visibility">Profile Visibility</Label>
             <Select value={profileVisibility} onValueChange={(v) => v && setProfileVisibility(v)}>
               <SelectTrigger id="profile-visibility">
@@ -54,7 +54,7 @@ export function PrivacyForm() {
             </p>
           </div>
 
-          <div className="flex items-center justify-between rounded-lg border p-4">
+          <div className="flex items-center justify-between rounded-lg border p-4 transition-colors duration-150 hover:bg-muted/30">
             <div className="space-y-0.5">
               <Label htmlFor="activity-status" className="text-sm font-medium">
                 Show activity status
@@ -71,7 +71,7 @@ export function PrivacyForm() {
             />
           </div>
 
-          <div className="flex items-center justify-between rounded-lg border p-4">
+          <div className="flex items-center justify-between rounded-lg border p-4 transition-colors duration-150 hover:bg-muted/30">
             <div className="space-y-0.5">
               <Label htmlFor="read-receipts" className="text-sm font-medium">
                 Read receipts

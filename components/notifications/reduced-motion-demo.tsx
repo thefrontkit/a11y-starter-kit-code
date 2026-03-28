@@ -23,7 +23,7 @@ export function ReducedMotionDemo() {
   return (
     <div className="space-y-4">
       <h2 className="text-lg font-semibold">Reduced Motion</h2>
-      <p className="text-sm text-muted-foreground">
+      <p className="text-sm text-muted-foreground leading-relaxed">
         This demo respects the <code>prefers-reduced-motion</code> media query.
         When enabled, animations are minimized or removed entirely.
       </p>
@@ -46,9 +46,9 @@ export function ReducedMotionDemo() {
         />
       </div>
 
-      <div className="rounded-md border p-4 bg-muted/50">
+      <div className="rounded-lg border p-4 bg-muted/50 transition-colors duration-150">
         <h3 className="text-sm font-medium mb-2">Accessibility Features</h3>
-        <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+        <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside leading-relaxed">
           <li>CSS: <code>prefers-reduced-motion: reduce</code> disables all transitions</li>
           <li>JS: <code>useReducedMotion()</code> hook adapts behavior programmatically</li>
           <li>Animations are decorative — content remains accessible without them</li>

@@ -23,7 +23,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link
           href="/"
-          className="flex items-center gap-2 font-bold text-lg touch-target"
+          className="flex items-center gap-2 font-bold text-lg touch-target rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           aria-label="A11y Starter Kit - Home"
         >
           <Accessibility className="h-6 w-6" aria-hidden="true" />
@@ -37,7 +37,7 @@ export function Header() {
                 <Link
                   href={link.href}
                   className={cn(
-                    "px-3 py-2 rounded-md text-sm font-medium transition-colors touch-target inline-flex items-center",
+                    "px-3 py-2 rounded-md text-sm font-medium transition-colors duration-150 touch-target inline-flex items-center focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
                     pathname === link.href
                       ? "bg-accent text-accent-foreground"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent/50"

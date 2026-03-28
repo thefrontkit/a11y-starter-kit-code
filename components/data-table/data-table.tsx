@@ -22,7 +22,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { ColumnHeader } from "./column-header"
 import { RowActions } from "./row-actions"
@@ -30,6 +29,7 @@ import { Toolbar } from "./toolbar"
 import { Pagination } from "./pagination"
 import { LiveRegion } from "@/components/a11y/live-region"
 import { useAnnounce } from "@/hooks/use-announce"
+import { Users } from "lucide-react"
 import type { User } from "@/types"
 
 interface DataTableProps {
@@ -91,11 +91,20 @@ export function DataTable({ data }: DataTableProps) {
       header: ({ column }) => (
         <ColumnHeader column={column} title="Role" onSortChange={announce} />
       ),
-      cell: ({ row }) => (
-        <Badge variant="outline" className="capitalize">
-          {row.original.role}
-        </Badge>
-      ),
+      cell: ({ row }) => {
+        const roleColors: Record<string, string> = {
+          admin: "bg-purple-500/10 text-purple-700 dark:text-purple-400 hover:bg-purple-500/20",
+          editor: "bg-blue-500/10 text-blue-700 dark:text-blue-400 hover:bg-blue-500/20",
+          viewer: "bg-muted text-muted-foreground hover:bg-muted/80",
+        }
+        return (
+          <span
+            className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium capitalize transition-colors duration-150 ${roleColors[row.original.role] ?? roleColors.viewer}`}
+          >
+            {row.original.role}
+          </span>
+        )
+      },
     },
     {
       accessorKey: "status",
@@ -103,11 +112,15 @@ export function DataTable({ data }: DataTableProps) {
         <ColumnHeader column={column} title="Status" onSortChange={announce} />
       ),
       cell: ({ row }) => (
-        <Badge
-          variant={row.original.status === "active" ? "default" : "secondary"}
+        <span
+          className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium transition-colors duration-150 ${
+            row.original.status === "active"
+              ? "bg-green-500/10 text-green-700 dark:text-green-400 hover:bg-green-500/20"
+              : "bg-muted text-muted-foreground hover:bg-muted/80"
+          }`}
         >
           {row.original.status}
-        </Badge>
+        </span>
       ),
     },
     {
@@ -153,7 +166,7 @@ export function DataTable({ data }: DataTableProps) {
       <Toolbar table={table} onFilterChange={announce} />
 
       <div
-        className="rounded-md border"
+        className="rounded-md border focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         role="region"
         aria-label="Users data table"
         tabIndex={0}
@@ -207,9 +220,15 @@ export function DataTable({ data }: DataTableProps) {
               <TableRow>
                 <TableCell
                   colSpan={columns.length}
-                  className="h-24 text-center"
+                  className="h-48"
                 >
-                  No results.
+                  <div className="flex flex-col items-center justify-center gap-3 py-8">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-muted">
+                      <Users className="h-8 w-8 text-muted-foreground" aria-hidden="true" />
+                    </div>
+                    <p className="text-base font-medium">No users found</p>
+                    <p className="text-sm text-muted-foreground">Try adjusting your search or filter criteria.</p>
+                  </div>
                 </TableCell>
               </TableRow>
             )}

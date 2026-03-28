@@ -27,9 +27,9 @@ export function StatsCard({ stat }: StatsCardProps) {
         <p
           className={`text-xs font-medium ${
             stat.changeType === "positive"
-              ? "text-green-800 dark:text-green-300"
+              ? "text-green-700 dark:text-green-400"
               : stat.changeType === "negative"
-                ? "text-red-800 dark:text-red-300"
+                ? "text-red-700 dark:text-red-400"
                 : "text-muted-foreground"
           }`}
         >

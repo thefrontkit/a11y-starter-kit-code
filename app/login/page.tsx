@@ -19,7 +19,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen flex-col">
       <Header />
 
-      <main id="main-content" className="flex-1 flex items-center justify-center p-4">
+      <main id="main-content" className="flex-1 flex items-center justify-center p-4 animate-page-enter">
         <Card className="w-full max-w-md">
           <CardHeader className="text-center space-y-2">
             <div className="flex justify-center">

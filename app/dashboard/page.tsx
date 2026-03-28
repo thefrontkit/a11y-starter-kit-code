@@ -20,7 +20,7 @@ export default function DashboardPage() {
       <div className="flex flex-1">
         <Sidebar />
 
-        <main id="main-content" className="flex-1 p-6">
+        <main id="main-content" className="flex-1 p-6 animate-page-enter">
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
@@ -30,8 +30,8 @@ export default function DashboardPage() {
 
           <div className="space-y-6">
             <div>
-              <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-              <p className="text-muted-foreground">
+              <h1 className="text-2xl font-bold tracking-tight leading-tight">Dashboard</h1>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Overview of your application metrics.
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function DashboardPage() {
               <h2 id="stats-heading" className="sr-only">
                 Statistics
               </h2>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 {statsCards.map((stat) => (
                   <StatsCard key={stat.title} stat={stat} />
                 ))}

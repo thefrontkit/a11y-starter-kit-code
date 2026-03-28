@@ -23,7 +23,7 @@ export default function NotificationsPage() {
       <div className="flex flex-1">
         <Sidebar />
 
-        <main id="main-content" className="flex-1 p-6">
+        <main id="main-content" className="flex-1 p-6 animate-page-enter">
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
@@ -33,10 +33,10 @@ export default function NotificationsPage() {
 
           <div className="space-y-6">
             <div>
-              <h1 className="text-3xl font-bold tracking-tight">
+              <h1 className="text-2xl font-bold tracking-tight leading-tight">
                 Notifications & Dialogs
               </h1>
-              <p className="text-muted-foreground">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Accessible modal dialogs, alert dialogs, and toast notifications.
               </p>
             </div>

@@ -13,7 +13,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors touch-target inline-flex items-center"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 touch-target inline-flex items-center rounded-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   Home
                 </Link>
@@ -23,7 +23,7 @@ export function Footer() {
                   href="https://www.w3.org/WAI/WCAG21/quickref/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors touch-target inline-flex items-center"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 touch-target inline-flex items-center rounded-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   WCAG 2.1 Reference
                   <span className="sr-only"> (opens in new tab)</span>

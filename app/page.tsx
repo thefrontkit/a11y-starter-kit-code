@@ -82,7 +82,7 @@ export default function HomePage() {
     <div className="flex min-h-screen flex-col">
       <Header />
 
-      <main id="main-content" className="flex-1">
+      <main id="main-content" className="flex-1 animate-page-enter">
         {/* Hero Section */}
         <section
           aria-labelledby="hero-heading"
@@ -90,7 +90,7 @@ export default function HomePage() {
         >
           <div className="mx-auto max-w-3xl space-y-6">
             <div className="flex justify-center">
-              <Badge variant="secondary" className="text-sm px-4 py-1">
+              <Badge variant="secondary" className="text-sm px-4 py-1 transition-colors duration-150">
                 WCAG 2.1 AA Compliant
               </Badge>
             </div>
@@ -101,7 +101,7 @@ export default function HomePage() {
               Build Accessible UIs{" "}
               <span className="text-primary">From Day One</span>
             </h1>
-            <p className="text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground md:text-xl max-w-2xl mx-auto leading-relaxed">
               A starter kit demonstrating WCAG 2.1 AA accessibility patterns
               with Next.js 15, Tailwind CSS 4, and shadcn/ui. Explore 5 demo
               pages showcasing real-world accessible components.
@@ -109,14 +109,14 @@ export default function HomePage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/dashboard"
-                className="inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground h-11 px-6 text-sm font-medium transition-colors hover:bg-primary/85 touch-target"
+                className="inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground h-11 px-6 text-sm font-medium transition-all duration-200 hover:bg-primary/85 touch-target focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 <Accessibility className="mr-2 h-5 w-5" aria-hidden="true" />
                 Explore Demos
               </Link>
               <Link
                 href="/login"
-                className="inline-flex items-center justify-center rounded-lg border-2 border-primary text-primary h-11 px-6 text-sm font-medium transition-colors hover:bg-primary/10 touch-target"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-primary text-primary h-11 px-6 text-sm font-medium transition-all duration-200 hover:bg-primary/10 touch-target focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 View Login Demo
               </Link>
@@ -189,7 +189,7 @@ export default function HomePage() {
                     <CardDescription>{demo.description}</CardDescription>
                     <div className="flex flex-wrap gap-2">
                       {demo.patterns.map((pattern) => (
-                        <Badge key={pattern} variant="outline" className="text-xs">
+                        <Badge key={pattern} variant="outline" className="text-xs transition-colors duration-150 hover:bg-muted">
                           {pattern}
                         </Badge>
                       ))}
@@ -198,7 +198,7 @@ export default function HomePage() {
                   <div className="p-6 pt-0">
                     <Link
                       href={demo.href}
-                      className="inline-flex w-full items-center justify-center rounded-lg border border-border bg-background h-8 px-3 text-sm font-medium transition-colors hover:bg-muted touch-target"
+                      className="inline-flex w-full items-center justify-center rounded-lg border border-border bg-background h-8 px-3 text-sm font-medium transition-all duration-150 hover:bg-muted touch-target focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                     >
                       View Demo
                       <span className="sr-only">: {demo.title}</span>

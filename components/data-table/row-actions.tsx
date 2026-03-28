@@ -19,7 +19,7 @@ export function RowActions({ user }: RowActionsProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        className="inline-flex h-8 w-8 items-center justify-center rounded-md hover:bg-muted focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+        className="inline-flex h-8 w-8 items-center justify-center rounded-md transition-colors duration-150 hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         aria-label={`Actions for ${user.name}`}
       >
         <MoreHorizontal className="h-4 w-4" aria-hidden="true" />
