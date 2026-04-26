@@ -6,6 +6,8 @@ A free, production-ready accessibility starter kit by [thefrontkit](https://thef
 
 **[Live Demo](https://a11y-starter-kit.vercel.app)**
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fthefrontkit%2Fa11y-starter-kit-code)
+
 ## Why This Kit?
 
 Most starter kits treat accessibility as an afterthought. This one bakes it in from the start. Every component, page, and interaction has been built with keyboard users, screen readers, and assistive technologies in mind.
