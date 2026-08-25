@@ -15,7 +15,7 @@
     "accessible-components"
   ],
   "author": "thefrontkit <thefrontkit@gmail.com> (https://thefrontkit.com)",
-  "license": "MIT",
+  "license": "LicenseRef-TheFrontKit",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thefrontkit/a11y-starter-kit.git"
