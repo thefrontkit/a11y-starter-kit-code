@@ -18,11 +18,11 @@
   "license": "LicenseRef-TheFrontKit",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thefrontkit/a11y-starter-kit.git"
+    "url": "git+https://github.com/thefrontkit/a11y-starter-kit-code.git"
   },
-  "homepage": "https://thefrontkit.com",
+  "homepage": "https://thefrontkit.com/apps/a11y-starter-kit",
   "bugs": {
-    "url": "https://github.com/thefrontkit/a11y-starter-kit/issues"
+    "url": "https://github.com/thefrontkit/a11y-starter-kit-code/issues"
   },
   "scripts": {
     "dev": "next dev",

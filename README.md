@@ -98,4 +98,6 @@ hooks/            # Custom accessibility hooks
 
 ## License
 
-Free to use for personal and commercial projects. Built and maintained by [thefrontkit](https://thefrontkit.com).
+Free to use in personal, commercial and client projects. You can't resell or redistribute the kit itself as a template. See [LICENSE.md](LICENSE.md).
+
+Built and maintained by [thefrontkit](https://thefrontkit.com/apps/a11y-starter-kit).

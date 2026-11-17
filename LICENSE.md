@@ -1,45 +1,29 @@
-# thefrontkit — License Summary
+# thefrontkit Free License
 
-**Plan:** <solo | team | agency>
-**Licensed To:** <email>
+Copyright (c) 2026 thefrontkit (https://thefrontkit.com)
 
----
+This license covers the A11y Starter Kit ("the Kit").
 
-### Grant
-You are granted a **non-exclusive**, **non-transferable**, worldwide right to use the product(s) within the scope of your selected plan.
-All intellectual property rights remain the property of **thefrontkit**.
+## You can
 
----
+- Use the Kit for free in personal, commercial and client projects.
+- Change the code however you like.
+- Ship the Kit, or anything you build from it, inside your own website,
+  web app or product, for as many projects as you want.
 
-### Allowed
-• Modify and customize the product for your licensed projects
-• Commercial use within the scope of your plan
-• Agency plan may deliver the product as part of client work deliverables
+## You cannot
 
----
+- Sell, sublicense or redistribute the Kit itself, or a modified copy of it,
+  as a template, starter kit, boilerplate, theme or UI kit, whether free or
+  paid.
+- Claim you made the Kit.
 
-### Not Allowed
-• Redistribution, resale, or sharing of raw product files (code zips, Figma files, or extracted components)
-• Sublicensing, renting, or leasing the products
-• Any unlawful or infringing use
+## No warranty
 
----
+The Kit is provided "as is", without warranty of any kind. The accessibility
+patterns in the Kit are a starting point. They do not make your product
+WCAG conformant on their own: test what you build on top of them. thefrontkit
+is not liable for any claim, damages or other liability arising from use of
+the Kit.
 
-### Support & Updates
-• Basic email support via [support@thefrontkit.com](mailto:support@thefrontkit.com)
-• Updates provided according to your plan or entitlement
-
----
-
-### Payment & Refunds
-• All sales are **final** — these are instant-access digital products
-• Please review live demos and reach out with any questions before purchase
-
----
-
-### Full Terms / EULA
-This summary is provided for convenience.
-The **thefrontkit Terms of Use** govern this license and include binding legal terms.
-
-© thefrontkit. All rights reserved.
-
+Questions: support@thefrontkit.com
